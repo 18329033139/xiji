@@ -1,0 +1,55 @@
+body{
+	font-size: 75%;
+	font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB";
+	
+}
+img{
+	margin-top: -2px;
+}
+.zm_Cover{
+	position: absolute;
+	width: 1200px;
+	/*margin: auto;*/
+	top: 135px;
+	left: 361px;
+	
+	display: flex;
+	justify-content: space-between;
+}
+.zm_cover-study a{
+	width: 389px;
+	display: inline-block;
+	height: 439px;
+	background: transparent;
+}
+.zm_side div:nth-child(1){
+	width: 100px;
+	height: 30px;
+	background: #ED5731;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+	font-size: 16px;
+}
+.zm_side{
+	position: fixed;
+	bottom: 150px;
+	right: 100px;
+	box-shadow: 0 0 2px lightgray;
+}
+.zm_side ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.zm_side li{
+	width: 100px;
+	height: 30px;
+	font-size: 14px;
+	text-align: center;
+	line-height: 30px;
+	background: white;
+	border-top: 1px solid #DBDCDB;
+	color: black;
+}

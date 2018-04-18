@@ -1,0 +1,466 @@
+body{
+	background: #F4F5F4;
+	font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB";
+	font-size: 75%;
+}
+.zm_NewGoods-wrap{
+	width: 1200px;
+	margin: auto;
+}
+.zm_victoria-wrap{
+	/*text-align: center;*/
+	width: 1200px;
+	margin: 30px 0;
+	background: white;
+}
+.zm_logo img{
+	display: block;
+	width: 400px;
+	height: 100px;
+	margin: auto;
+}
+.zm_victoria{
+	width: 1200px;
+	height: 520px;
+	
+}
+#w1 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_180410.png) no-repeat center;
+}
+#w2 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_180404.png) no-repeat center;
+}
+#w3 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_180329.png) no-repeat center;
+}
+#w4 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_180319.png) no-repeat center;
+}
+
+#w5 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_180314.png) no-repeat center;
+}
+#w6 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_180307.png) no-repeat center;
+}
+
+#w7 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_180227.png) no-repeat center;
+}
+#w8 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_180213.png) no-repeat center;
+}
+#w9 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_180212.png) no-repeat center;
+}
+#w10 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_180208.png) no-repeat center;
+}
+#w11 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_180130.png) no-repeat center;
+}
+#w12 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_180126.png) no-repeat center;
+}
+#w13 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_180118.png) no-repeat center;
+}
+#w14 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_180105_01.png) no-repeat center;
+}
+#w15 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_171220_01.png) no-repeat center;
+}
+
+#w16 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_06.png) no-repeat center;
+}
+/**/
+#w17 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_07.png) no-repeat center;
+}
+#w18 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_171122_01.png) no-repeat center;
+}
+#w19 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_171117_01.png) no-repeat center;
+}
+#w20 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_171110_01.png) no-repeat center;
+}
+#w21 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_171102_01.png) no-repeat center;
+}
+#w22 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_171213_01.png) no-repeat center;
+}
+#w23 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_171024_02.png) no-repeat center;
+}
+#w24 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_171024_01.png) no-repeat center;
+}
+#w25 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_171024_02.png) no-repeat center;
+}
+#w26 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_01.png) no-repeat center;
+}
+#w27 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_03.png) no-repeat center;
+}
+#w28 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_04.png) no-repeat center;
+}
+#w29 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_05.png) no-repeat center;
+}
+#w30 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_08.png) no-repeat center;
+}
+#w31 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_09.png) no-repeat center;
+}
+#w32 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_010.png) no-repeat center;
+}
+#w33 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_011.png) no-repeat center;
+}
+#w34 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_012.png) no-repeat center;
+}
+#w35 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_013.png) no-repeat center;
+}
+#w36 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_171213_01.png) no-repeat center;
+}
+#w37 .zm_victoria{
+	
+	background: url(http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_014.png) no-repeat center;
+}
+.zm_left{
+	width: 590px;
+	height: 520px;
+	position: relative;
+	float: left;
+}
+.zm_left-vedio{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 90px;
+	height: 90px;
+	z-index: 233;
+	background: url(../img/play.png);
+	background-position: 0 0;
+	cursor: pointer;
+}
+.zm_vedio iframe{
+	position: absolute;
+	bottom: 0;
+	z-index: 666;
+
+}
+.zm_vedio{
+	position: relative;
+	top: -400px;	
+	left: 100px;
+	width: 1024px;
+	height: 800px;
+	background: white;
+	display: none;
+	
+}
+.zm_vedio span{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	font-size: 20px;
+	color: #6E6F6E;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+.zm_left-vedio:hover{
+	background-position: 0 -90px;
+}
+.zm_vedio-cover{
+	position: relative;
+	top: 100px;
+	margin: auto;
+	width: 450px;
+	height: 320px;
+
+}
+
+.zm_vedio-cover span{
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	border: 2px solid white;
+
+}
+.zm_vedio-cover span:nth-child(1){
+	top: 0;
+	left: 0;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+}
+.zm_vedio-cover span:nth-child(2){
+	top: 0;
+	right: 0;
+	border-left-color: transparent;
+	border-bottom-color: transparent;
+}
+.zm_vedio-cover span:nth-child(3){
+	bottom: 0;
+	left: 0;
+	border-right-color: transparent;
+	border-top-color: transparent;
+}
+.zm_vedio-cover span:nth-child(4){
+	bottom: 0;
+	right: 0;
+	border-left-color: transparent;
+	border-top-color: transparent;
+}
+
+.zm_right{
+	width: 510px;
+	float: right;
+}
+.zm_right p{
+	font-size: 22px;
+	font-weight: 600;
+	width: 450px;
+	margin: 25px 0;
+	line-height: 1.5;
+	
+}
+.zm_right a{
+	display: inline-block;
+	width: 450px;
+	text-decoration: none;
+	color: #656665;
+	font-size: 16px;
+	line-height: 1.5;
+}
+.zm_right a:nth-child(3){
+	display: inline-block;
+	width: 107px;
+	height: 30px;
+	border-radius: 3px;
+	background: #202120;
+	color: white;
+	font-size: 16px;
+	text-align: center;
+	line-height: 30px;
+	margin: 20px 0 30px;
+}
+.zm_images-con{
+	width: 930px;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+.zm_images-conwrap{
+	width: 450px;
+	overflow: hidden;
+	
+}
+.zm_images{
+	width: 510px;
+	position: relative;
+
+}
+.zm_images-wrap{
+	width: 135px;
+}
+.zm_images-wrap img{
+
+	width: 135px;
+	height: 135px;
+}
+.zm_images-wrap p a{
+	font-size: 13px;
+	font-weight: 400;
+	color: #6E666F;
+	width: 135px;
+	display: inline-block;
+}
+.zm_images-wrap p a:hover{
+	text-decoration: underline;
+}
+.zm_arrow span{
+	font-size: 20px;
+	font-weight: 800;
+	position: absolute;
+	color: #656665;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+.zm_arrow span:nth-child(1){
+	top: 60px;
+	left: -20px;
+}
+.zm_arrow span:nth-child(2){
+	top: 60px;
+	right: 32px;
+}
+.zm_go{
+	width: 240px;
+	margin-left: 500px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.zm_go span:nth-child(1){
+	float: left;
+	display: inline-block;
+	letter-spacing: 1px;
+	line-height: 80px;
+	font-size: 16px;
+	color: #323332;
+}
+.zm_go span:nth-child(1):hover{
+	text-decoration: underline;
+}
+.zm_go span:nth-child(2){
+	margin-top: 35px;
+	float: left;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border: 6px solid #323231;
+	transform: rotateZ(45deg);
+	border-left-color: transparent;
+	border-bottom-color: transparent;
+}
+.zm_side{
+	position: fixed;
+	width: 300px;
+	height: 440px;
+	overflow: hidden;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	display: none;
+}
+.zm_line{
+	height: 440px;
+	width: 8px;
+	background: #E0E1E0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.zm_line a{
+	position: absolute;
+	width: 8px;
+	height: 20px;
+	background: #989998;
+	top: 0;
+	left: 0;
+}
+a{
+	text-decoration: none;
+	
+}
+.classfly li span:nth-child(1){
+	font-size: 16px;
+	color: #656665;
+	vertical-align: middle;
+	margin-right: 6px;
+}
+
+.classfly{
+	position: absolute;
+	right: 20px;
+	width: 300px;
+	height: 1194px;
+	top: 0;
+}
+.classfly a{
+	float: right;
+}
+
+.classfly li{
+
+	line-height: 40px;
+	overflow: hidden;
+	
+}
+
+.classfly li span:nth-child(2){
+	display: inline-block;
+	width: 24px;
+	height: 2px;
+	background: #656665;
+	vertical-align: middle;
+}
+
+
+.classfly li span.active{
+	position: absolute;
+	left: 50px;
+	z-index: 555;
+	font-size: 20px;
+	font-weight: 800;
+	width: 172px;
+	float: left;
+	color: black;
+}
+.classfly a.a_active{
+	width: 200px;
+	height: 30px;
+}
+.classfly span:nth-child(2).span_active{
+	width: 80px;
+	height: 3px;
+	margin-left: 120px;
+	background: black;
+}

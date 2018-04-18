@@ -1,0 +1,390 @@
+body{
+	background: #f5f5f5;
+	font-size: 75%;
+	height: 1.5;
+	font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB";
+}
+* a{
+	text-decoration: none;
+}
+* a:hover{
+	text-decoration: underline;
+}
+* a :hover span{
+	text-decoration: underline;
+}
+#djw_container{
+	width: 100%;
+}
+.djw_clearfix{
+	display: block;
+}
+#djw_inner-warp{
+	width: 1200px;
+	margin: 0 auto;
+}
+.djw_holder{
+	width: 1200px;
+	height: 390px;
+}
+.djw_countrystore-list{
+	width: 1200px;
+	height: 833px;
+	margin: 0 auto;
+	position: relative;
+	background: url(../img/download-1.png) 0 0 no-repeat;
+}
+.other_bg{
+	position: absolute;
+	left: 39px;
+	top: 72px;
+	background: url(../img/download-2.png) no-repeat;
+}
+.djw_countrystore-list a{
+	width: 210px;
+	height: 60px;
+	display: block;
+	padding-top: 122px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	font-size: 17px;
+	line-height: 1.4;
+}
+.djw_countrystore-list a span{
+	font-size: 15px;
+}
+.more-bg{
+	position: absolute;
+	top: 590px;
+    left: 545px;
+    background: url(../img/download-1111.png);
+}
+.djw_list-title{
+	height: 100px;
+	font-size: 30px;
+}
+.djw_list-title span{
+	height: 100px;
+    line-height: 100px;
+   background: url(../img/download.gif) left center repeat-x;
+    width: 180px;
+    display: block;
+    margin: 0 auto;
+    padding: 0 45px;
+    text-align: center;
+}
+.djw_list-title span span{
+	background: #F5F5F5;
+	text-align: center;
+	padding: 0 20px;
+	background-image: none;
+	width: auto;
+}
+.djw_country-block{
+	display: block;
+	width: 1240px;
+	margin-right: -40px;
+}
+.content-block{
+	width: 580px;
+    height: 500px;
+    float: left;
+    margin: 0 40px 45px 0;
+    background: white;
+}
+.content-block .countrystore-tit{
+	height: 50px;
+    border-bottom: 1px solid #333333;
+    position: relative;
+    overflow: visible;
+    font-size: 24px;
+    color: #000000;
+    line-height: 50px;
+    padding-left: 75px;
+}
+.content-block .countrystore-tit i{
+	width: 67px;
+    height: 55px;
+    position: absolute;
+    bottom: 12px;
+    left: 5px;
+    background: url(../img/download-7.png) 0 0 no-repeat;
+}
+.link{
+	height: 30px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: #FFFFFF;
+    /*text-decoration: none;*/
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0 8px 0 10px;
+    border-radius: 5px;
+    background-color: #333333;
+}
+.djw_country-block .content-block .countrystore-tit a span {
+	
+    background: url(../img/bai.png) right center no-repeat;
+    padding-right: 12px;
+}
+.aaaaaaa{
+	clear: both;
+}
+.goods-list-box{
+	padding: 10px;
+}
+
+.goods-list-box ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.goods-list-box ul li{
+	width: 119px;
+    float: left;
+    padding: 10px 10px 15px 10px;
+    position: relative;
+}
+.goods-list-box ul li .goods-img{
+	vertical-align: bottom;
+    width: 119px;
+    height: 119px;
+}
+.goods-list-box ul li .goods-img a img{
+	width: 119px;
+	height: 119px;
+}
+.goods-list-box ul li .goods-txt .tit{
+	margin: 8px 0;
+}
+.goods-list-box ul li .goods-txt a{
+	color: #333;
+    display: block;
+    font-size: 12px;
+    line-height: 1.5em;
+    height: 3.0em;
+    overflow: hidden;
+}
+.goods-list-box ul li .goods-txt .price{
+	color: red;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.0;
+}
+.goods-list-box ul li.first{
+	width: 538px;
+    border-bottom: 1px solid #E5E5E5;
+    margin-bottom: 10px;
+}
+.goods-list-box .first .goods-img{
+	width: 200px;
+    height: 190px;
+    float: left;
+    text-align: left;
+}
+.goods-list-box ul li.first .goods-img a img{
+	width: 190px;
+	height: 190px;
+}
+.goods-list-box .first .goods-txt{
+	width: 338px;
+    float: left;
+    position: relative;
+    height: 190px;
+}
+.goods-list-box .first .goods-txt .tit a{
+	    font-size: 16px;
+	    /*text-decoration: none;*/
+}
+.goods-list-box .first .goods-txt .price{
+	position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: #EB5A41;
+    font-size: 20px;
+    font-weight: bold;
+}
+.djw_country-block .content-block.store_JA .countrystore-tit {
+    background: #efefef;
+}
+.djw_country-block .content-block.store_JA  .countrystore-tit a {
+    background: #aeaeae;
+}
+.djw_country-block .content-block.store_JA .countrystore-tit i {
+    background-position: 0px -110px;
+}
+
+.djw_country-block .content-block.store_US .countrystore-tit i {
+    background-position: 0px -55px;
+}
+.djw_country-block .content-block.store_US .countrystore-tit {
+    background: #f2e9e2;
+}
+.djw_country-block .content-block.store_US .countrystore-tit a {
+    background: #b99270;
+}
+
+.djw_country-block .content-block.store_NZL .countrystore-tit i {
+    background-position: 0px -220px;
+}
+.djw_country-block .content-block.store_NZL .countrystore-tit {
+    background: #f1f0f5;
+}
+.djw_country-block .content-block.store_NZL .countrystore-tit a {
+    background: #b3b2cc;
+}	
+.djw_country-block .content-block.store_AUA .countrystore-tit i {
+    background-position: 0px -165px;
+}
+.djw_country-block .content-block.store_AUA .countrystore-tit {
+    background: #e7ebec;
+}
+.djw_country-block .content-block.store_AUA .countrystore-tit a {
+    background: #819d9a;
+}
+.djw_country-block .content-block.store_HK .countrystore-tit i {
+    background-position: 0px -275px;
+}
+.djw_country-block .content-block.store_HK .countrystore-tit {
+    background: #f3eaeb;
+}
+.djw_country-block .content-block.store_HK .countrystore-tit a {
+    background: #c19d9d;
+}
+.djw_country-block .content-block.store_GBA .countrystore-tit i {
+    background-position: 0px 0px;
+}
+.djw_country-block .content-block.store_GBA .countrystore-tit {
+    background: #eef1f6;
+}
+.djw_country-block .content-block.store_GBA .countrystore-tit a {
+    background: #acbfd9;
+}
+.djw_country-block .content-block.store_DEA .countrystore-tit i {
+    background-position: 0px -440px;
+}
+.djw_country-block .content-block.store_DEA  .countrystore-tit {
+    background: #ebebe1;
+}
+.djw_country-block .content-block.store_DEA .countrystore-tit a {
+    background: #a09d70;
+}
+.djw_country-block .content-block.store_CH .countrystore-tit i {
+    background-position: 0px -330px;
+}
+.djw_country-block .content-block.store_CH .countrystore-tit {
+    background: #f9eded;
+}	
+.djw_country-block .content-block.store_CH .countrystore-tit a {
+    background: #e2aaaa;
+}
+.djw_countrystore-list ul li{
+	width: 210px;
+    height: 180px;
+    position: absolute;
+}
+li.iteam0.dingwei {
+	top: 72px;
+    left: 291px;
+}
+li.iteam1.dingwei {
+	top: 72px;
+    left: 545px;
+}
+li.iteam2.dingwei{
+	top: 72px;
+    left: 797px;
+}
+li.iteam3.dingwei{
+	top: 331px;
+    left: 200px;
+}
+li.iteam4.dingwei {
+	top: 331px;
+    left: 453px;
+}
+li.iteam5.dingwei{
+	top: 331px;
+    left: 708px;
+}
+li.iteam6.dingwei{
+	top: 331px;
+    left: 960px;
+}
+li.iteam7.dingwei{
+	top: 590px;
+    left: 797px;
+}
+.djw_country-btn{
+	margin: 20px 0;
+}
+.djw_country-btn>ul{
+	margin-right: -15px;
+}
+.djw_country-btn>ul li{
+	width: 228px;
+    height: 63px;
+    background-color: #FFFFFF;
+    float: left;
+    margin: 0 15px 15px 0;
+}
+.djw_country-btn>ul li a{
+	width: 208px;
+    padding: 15px 10px;
+    height: 33px;
+    font-size: 15px;
+    color: #000;
+    display: block;
+}
+.djw_country-btn>ul li a span.icon{
+	width: 40px;
+    height: 33px;
+    margin-right: 10px;
+    display: inline-block;
+    zoom: 1;
+    background: url(../img/download-7.png) no-repeat;
+}
+.djw_country-btn ul li a p {
+    height: 33px;
+    display: inline-block;
+    zoom: 1;
+    line-height: 33px;
+    vertical-align: 10px;
+}
+.djw_country-btn ul li a .gogogo{
+	/*text-decoration: none;*/
+    float: right;
+    width: 39px;
+    height: 19px;
+    padding: 8px;
+    background: #F2F2F2 url(../img/download-3.png) 38px 10px no-repeat;
+    border-radius: 3px;
+    line-height: 19px;
+    color: #666666;
+}
+.djw_country-btn>ul li.btn_JA a span.icon{
+	background-position: -84px -66px;
+}
+.djw_country-btn>ul li.btn_US a span.icon{
+	background-position: -84px -33px;
+}
+.djw_country-btn>ul li.btn_NAL a span.icon{
+	background-position: -84px -132px;
+}
+.djw_country-btn>ul li.btn_AUA a span.icon{
+	background-position: -84px -99px;
+}
+.djw_country-btn>ul li.btn_HK a span.icon{
+	background-position: -84px -165px;
+}
+.djw_country-btn>ul li.btn_GBA a span.icon{
+	background-position: -84px 0px;
+}
+.djw_country-btn>ul li.btn_DEA a span.icon{
+	background-position: -84px -264px;
+}
+.djw_country-btn>ul li.btn_CH a span.icon{
+	background-position: -84px -198px;
+}

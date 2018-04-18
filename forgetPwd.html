@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>xiji.com/passport-lost.html</title>
+		<link rel="shortcut icon" type="image/x-icon" href="http://img1.helper-sys.com/public/app/site/statics/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/forgetPwd.css"/>
+	</head>
+	<body>
+		
+		<div class="zm_wrap-pwd">
+			<div class="zm_pwd">
+				<span class="zm_gress-wrap">
+					<span class="zm_gress"></span>
+				</span>	
+					
+				<div class="zm_first zm_first-r">
+					<span>1</span>
+					<p>填写账户名</p>
+				</div>
+				
+				<div class="zm_first zm_second zm_second-r">
+					<span>2</span>
+					<p>身份验证</p>
+				</div>
+				
+				<div class="zm_first zm_second zm_third">
+					<span>3</span>
+					<p>设置新密码</p>
+				</div>
+				
+				<div class="zm_first zm_second zm_forth">
+					<span>4</span>
+					<p>完成</p>
+				</div>
+			</div>
+			
+			<h1>找回密码</h1>
+			<div class="zm_Pwd">
+				<div class="zm_name"> 账户名: <input type="text"  placeholder="手机号码/用户名/邮箱"/> </div>
+				<div class="zm_rem"> 
+					<input type="button" value="下一步"/>
+					<a href="login.html">记起密码请登录</a>
+				</div>
+			</div>
+			
+			<div class="zm_identity">
+				<h2>为保障你的账户安全,请先验证您的身份</h2>
+				
+				<p class="zm_method">选择验证方式: <input type="radio" checked="checked" /> <span></span></p>
+				
+				<p class="zm_phone-num">
+					手机号码: <span></span>
+				</p>
+				
+				<p class="zm_Code">
+					填写验证码: <input type="text"  placeholder="填写验证码"/>
+					<input type="button"  value="发送验证码" />
+				</p>
+				
+				<div class="zm_next"><a href="###">下一步</a></div>
+			</div>
+			
+			
+			<div class="zm_reset">
+				<input type="text" class="test"  style="display: none;"/>
+				<div class="zm_reset-wrap">
+					
+					<label><span>*</span>新密码:</label> 
+					<input type="password"  required="required" placeholder="6-20个字符"/>
+					<div class="zm_pwd-level">
+						<p>密码强度: <span>差</span></p>
+						<span></span>
+					</div>
+					<label><span>*</span>确认新密码: </label>
+					<input type="password" required="required" placeholder="再次确认自密码"/>
+					
+					<div class="zm_next-r">
+						<a href="###">确定</a>
+					</div>
+				</div>
+			</div>
+
+		
+			<div class="zm_complete">
+				<i class="iconfont icon-wancheng1" style="font-size: 50px;color: green;"></i>
+				<p>新密码已经设置成功,<a href="login.html">点此登录</a></p>
+			</div>			
+			
+		</div>
+		
+		
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/forgetPwd.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

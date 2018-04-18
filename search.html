@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/search.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+	</head>
+
+	<body>
+		<header id="header"></header>
+		<div class="ljq_main">
+			<!--主界面-->
+			<div class="ljq_container">
+				<!--左侧筛选栏-->
+				<div class="ljq_filter-lists">
+					<!--筛选-->
+					<dl class="ljq_filter-entries">
+						<dt>筛选</dt>
+					</dl>
+					<!--价格-->
+					<dl class="ljq_filter-entries">
+						<dt>价格</dt>
+						<dd>
+							<span class="ljq_filter-item ljq_active">不限</span>
+							<span class="ljq_filter-item">0-99元</span>
+							<span class="ljq_filter-item">100-199元</span>
+							<span class="ljq_filter-item">200-299元</span>
+							<span class="ljq_filter-item">300-399元</span>
+							<span class="ljq_filter-item">500-699元</span>
+							<span class="ljq_filter-item">700-999元</span>
+							<span class="ljq_filter-item">1000元以上</span>
+							<span class="ljq_filter-item2">
+									<input class="ljq_filter-item-input" type="text" />
+									<span>-</span>
+									<input class="ljq_filter-item-input" type="text" />
+									<span class="ljq_filter-item-pop">
+										<button>清空</button>
+										<button>确定</button>
+									</span>
+							</span>
+						</dd>
+					</dl>
+					<!--重量-->
+					<dl class="ljq_filter-entries">
+						<dt>重量</dt>
+						<dd>
+							<span class="ljq_filter-item ljq_active">不限</span>
+							<span class="ljq_filter-item">0g-50g</span>
+							<span class="ljq_filter-item">50g-100g</span>
+							<span class="ljq_filter-item">100g-200g</span>
+							<span class="ljq_filter-item">201g-300g</span>
+							<span class="ljq_filter-item">301g-500g</span>
+							<span class="ljq_filter-item">501g-999g</span>
+							<span class="ljq_filter-item">1kg-2kg</span>
+							<span class="ljq_filter-item">2kg以上</span>
+							<span class="ljq_filter-item2">
+									<input class="ljq_filter-item-input" type="text" />
+									<span>-</span>
+							<input class="ljq_filter-item-input" type="text" />
+							<span class="ljq_filter-item-pop">
+										<button>清空</button>
+										<button>确定</button>
+									</span>
+							</span>
+						</dd>
+					</dl>
+					<!--发货地-->
+					<dl class="ljq_filter-entries">
+						<dt>发货地</dt>
+						<dd class="ljq_filter-entries-value">
+							<span class="ljq_filter-item ljq_active">不限</span>
+							<span class="ljq_filter-item">美国直邮</span>
+							<span class="ljq_filter-item">日本直邮</span>
+							<span class="ljq_filter-item">中国直邮</span>
+							<span class="ljq_filter-item">香港直邮</span>
+							<span class="ljq_filter-item">澳新直邮</span>
+							<span class="ljq_filter-item">英国直邮</span>
+							<span class="ljq_filter-item">德国直邮</span>
+							<span class="ljq_filter-item">加拿大直邮</span>
+							<span class="ljq_filter-item">瑞典直邮</span>
+							<span class="ljq_filter-item">中国台湾直邮</span>
+							<span class="ljq_filter-item">比利时</span>
+						</dd>
+					</dl>
+				</div>
+				<!--右侧商品区-->
+				<div class="ljq_goods-right-box">
+					<!--商品区上方栏-->
+					<div class="ljq_gallery-sortbar">
+						<div class="ljq_gallery-sort">
+							<em class="action-sort active">默认</em >
+								<em class="action-sort">价格<img src="img/jiantou.png" /></em>
+							<em class="action-sort">销量<img src="img/jiantou.png" /></em>
+							<em class="action-sort">新品</em>
+						</div>
+						<div class="ljq_gallery-showmode">
+							<div class="ljq_checker">
+								<span><input type="checkbox" /></span>
+							</div>
+							<label for="">仅显示有货</label>
+							<div class="ljq_checker">
+								<span><input type="checkbox" /></span>
+							</div>
+							<label for="">仅显示特卖</label>
+							<div class="ljq_checker">
+								<span><input type="checkbox" /></span>
+							</div>
+							<label for="">包邮</label>
+							<div class="ljq_checker">
+								<span><input type="checkbox" /></span>
+							</div>
+							<label for="">仅看自营</label>
+						</div>
+						<div class="ljq_pageview">
+							<span class="ljq_page-count">
+									<span class="ljq_page-current">1</span> /
+							<span class="ljq_page-total">5</span>
+							</span>
+							<span class="ljq_page-action">
+									<a href=""></a>
+									<a href=""></a>
+								</span>
+						</div>
+					</div>
+					<!--商品列表区-->
+					<div class="ljq_gallery-show">
+						<!--展示区-->
+						<div class="ljq_gallery-grid">
+							<!--商品-->
+							<ul class="ljq_clearfix">
+								<div class="ccc"></div>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer id="footer"></footer>
+		<div class="ljq_shadow"></div>
+		<div class="ljq_popup_product">
+			<div class="ljq_close-btn">X</div>
+			<div class="ljq_product-container">
+
+					<!--左侧放大镜-->
+					<div class="ljq_product-side">
+						<div id="preview" class="spec-preview">
+							<span class="jqzoom"><img class="ljq" jqimg="" src="" /></span>
+						</div>
+						<!--缩图开始-->
+						<div class="spec-scroll">
+							<a class="prev"><img src="img/prev.png" /></a>
+							<a class="next"><img src="img/next.png" /></a>
+							<div class="items">
+								<ul>
+									<li><img class="ljq" alt="" bimg="" src="" onmousemove="preview(this);"></li>
+									<li><img class="ljq" alt="" bimg="" src="" onmousemove="preview(this);"></li>
+									<li><img class="ljq" alt="" bimg="" src="" onmousemove="preview(this);"></li>
+									
+								</ul>
+							</div>
+							<div class="ljq_ccc"></div>
+						</div>
+					</div>
+					<div class="ljq_ccc"></div>
+
+				</div>
+				<!--右侧商品信息-->
+				<div class="ljq_product-main">
+					<div class="ljq_product-information">
+						
+						<div class="ljq_product-titles">
+						<h1>【梦幻天鹅 精致典雅】Swarovski 施华洛世奇 经典天鹅水晶吊坠项链 5007735  </h1>
+						</div>
+						<div class="ljq_product-concerns">
+							<ul>
+								<li class="ljq_product-price">
+									<span class="ljq_detail-price">
+										<p class="ljq_action-price">￥629.00</p>
+										
+									</span>
+								</li>
+								
+							</ul>
+						</div>
+						<div class="ljq_product-buy">
+							<ul>
+								<li class="ljq_product-buy-quantity">
+									<span class="ljq_label">数量</span>
+									<span class="ljq_p-quantity">
+										<a href="javascript:void(0);">-</a>
+										<input type="text" value="1"/>
+										<a href="javascript:void(0);">+</a>
+									</span>
+								</li>
+								
+							</ul>
+							<ul class="ljq_product-buy-action-outbox">
+								<li class="ljq_product-buy-action">
+									<button class="ljq_action-buynow">立即购买</button>
+								</li>
+							</ul>
+							<div class="ljq_ccc"></div>
+						</div>
+						
+					</div>
+					<div class="ljq_ccc"></div>
+				</div>
+				<div class="ljq_ccc"></div>
+		</div>
+		<div class="ljq_shadow2"></div>
+		<div class="passport-container"></div>
+		<script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/search.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.jqzoom.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

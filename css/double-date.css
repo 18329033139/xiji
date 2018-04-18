@@ -1,0 +1,165 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+table{
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+.clearfix{
+    zoom:1;
+}
+.clearfix:after{
+    content:".";
+    display:block;
+    width:0;
+    height:0;
+    visibility:hidden;
+    clear: both;
+}
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+.date{
+    position:relative;
+}
+#from i{
+	position: absolute;
+	left: 51px;
+	top: 4px;
+}
+#to i{
+	position: absolute;
+	left: 13px;
+	top: 4px;	
+}
+.date-check{
+    width:140px;
+    height:30px;
+    line-height:30px;
+    border:1px solid #ccc;
+    outline: none;
+    text-align: center;
+    background: url("../img/日历17(1).png") no-repeat left center;
+    background-size:22px 22px ;
+}
+.date-list{
+    display:none;
+    position:absolute;
+    left: 48px;
+    top:32px;
+    padding-top:10px;
+    background: #fcfcfc;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    overflow:hidden;
+    border:2px solid black;
+    z-index: 999;
+    background: #444444;
+}
+.header{
+    margin-bottom:4px;
+    padding: 0 5px;
+}
+.header .fl{
+    margin-right:5px;
+}
+.header .fl,.header .fr{
+    cursor:pointer;
+}
+.header select{
+    padding: 2px 0;
+    vertical-align:top;
+}
+
+.header-right{
+    margin-right:8px;
+}
+.header-left,.header-right{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    line-height: 18px;
+    color: white;
+}
+.today{
+    padding:2px 5px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    background:white;
+    color:black;
+    font-size:12px;
+    width:40px;
+    height:16px;
+    line-height:16px;
+    text-align: center;
+}
+.date-list,.date-list table{
+    width:270px;
+}
+
+.date-list thead{
+    background:#00cdec;
+}
+.date-list th{
+    padding:2px;
+    color:#fff;
+  	background: #f5f5f5;
+    font-size: 14px;
+    font-weight: normal;
+    width: 36px;
+    height: 32px;
+    color: #8f918f;
+    text-align: center;
+    line-height: 32px;
+}
+.date-list td{
+    width: 36px;
+    height: 32px;
+    line-height: 32px;
+    padding:2px 0;
+    text-align:center;
+    font-size: 12px;
+    background: #ffffff;
+}
+.date-list td:hover{
+    background:#ccc;
+    color:#fff;
+}
+.date-list td.current{
+    background:#00cdec;
+    color:#fff;
+}
+
+.outer{
+    width:345px;
+    height: 32px;
+    margin-right: 10px;
+}
+.date1{
+    margin-bottom:30px;
+}
+.date-error .date-check{
+    border:1px solid red;
+}
+#stus-selection{
+	display: inline-block;
+	margin-left: 10px;
+	outline: none;
+}
+#serarch-btn{
+	/*display: inline-block;*/
+	width: 56px;
+	height: 25px;
+	text-align: center;
+	color: white;
+	background: #eb5a41;
+	outline: none;
+}

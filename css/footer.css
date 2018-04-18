@@ -1,0 +1,141 @@
+body{
+	background: #f5f5f5;
+	font-size: 75%;
+	height: 1.5;
+	font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB";
+}
+.ljq_footer{
+	width: 100%;
+    background-color: #ebebeb;
+    border-top: 1px solid #333333;
+}
+.ljq_footer-inner,.ljq_footer-page{
+	width: 1200px;
+    margin: 0 auto;
+}
+.ljq_footer-inner{
+	 padding: 45px 0;
+}
+.ljq_left-box{
+	width: 665px;
+    float: left;
+}
+.ljq_helper-item{
+	margin-right: 10px;
+    width: 120px;
+    float: left;
+}
+.ljq_helper-item dt{
+	font-size: 14px;
+    margin-bottom: 10px;
+    color: #000;
+}
+.ljq_helper-item a{
+	color: #666;
+    line-height: 1.8;
+    display: block;
+    text-decoration: none;
+    transition: transform .4s linear;
+}
+.ljq_helper-item a:hover{
+	color: #999;
+	transform: translateX(10px);
+}
+.ljq_center-box{
+	width: 265px;
+    padding: 0 50px;
+    float: left;
+    border-left: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+}
+.ljq_tit-box,.ljq_tit-box2{
+	font-size: 14px;
+    margin-bottom: 10px;
+    color: #000;
+}
+.ljq_center-box p{
+	font-size: 12px;
+    line-height: 1.8;
+    color: #666;
+}
+.ljq_center-box img{
+	vertical-align: text-bottom;
+}
+.ljq_center-box a{
+	color: #0563c3;
+    text-decoration: none;
+}
+.ljq_tit-box2{
+	margin-top: 30px;
+}
+.ljq_right-box{
+	width: 165px;
+    float: left;
+    text-align: center;
+    padding-top: 40px;
+}
+.ljq_right-box p{
+	margin-bottom: 10px;
+}
+.ljq_ccc{
+	clear: both;
+}
+.ljq_inner-warp{
+	width: 1200px;
+    margin: 0 auto;
+    border-top: 1px solid #DDDDDD;
+    padding: 30px 0;
+    text-align: center;
+    line-height: 1.8;
+    margin-top: 10px;
+}
+.ljq_inner-warp a{
+	color: black;
+	text-decoration: none;
+}
+.ljq_link{
+	margin-top: 5px;
+}
+.email-box{
+	width: 100%;
+}
+.email-box-inner{
+	width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+    position: relative;
+    font-size: 14px;
+    line-height: 45px;
+}
+.email-box-inner .email-input{
+	width: 420px;
+    height: 43px;
+    padding: 0 5px;
+    line-height: 43px;
+    border: 1px solid #D3D3D3;
+    color: #666666;
+    line-height: 43px;
+    margin-left: 8px;
+}
+.email-btn{
+	background-color: #212121;
+    min-width: 60px;
+    height: 45px;
+    padding: 0px 5px;
+    text-align: center;
+    line-height: 45px;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+}
+.right-box{
+	position: absolute;
+    right: 0px;
+    top: 47px;
+    height: 32px;
+    line-height: 1.0;
+}
+.right-box a{
+	color: #0563c3;
+    text-decoration: none;
+}

@@ -1,0 +1,279 @@
+a{
+	text-decoration: none;
+	
+}
+body{
+	font-size: 75%;
+	background: #F4F5F4;
+	font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB";
+}
+.zm_login{
+	font-size: 140%;
+}
+.zm_login{
+	border: 1px solid #D7D8D7;
+	width: 540px;
+	margin: 60px auto 0;
+}
+.zm_logo{
+	position: relative;
+	height: 70px;
+	background: white;
+}
+.zm_logo img{
+	display: inline-block;
+	width: 145px;
+	height: 35px;
+	margin: 17.5px 20px 0;
+	
+}
+.zm_login-wrap{
+	margin-top: 10px;
+	background: white;
+	padding-bottom: 83px;
+}
+.zm_login-wrap .zm_top{
+	display: flex;
+	justify-content: space-around;
+	background: white;
+}
+.zm_login-wrap .zm_top div{
+	text-align: center;
+}
+/*.zm_active{
+	background: #F6F7F6;
+	border: none;
+}*/
+.zm_login-wrap .zm_top a{
+	width: 120px;
+	height: 21px;
+	display: inline-block;
+	font-size: 20px;
+	color: black;
+	padding: 12px 75px;
+	background: #F6F7F6;
+}
+.zm_login-wrap .zm_top span{
+	float: left;
+	width: 120px;
+	height: 2px;
+	background:  #EA5945;
+	margin-left: 75px;
+	display: none;
+}
+
+.zm_top a.zm_a-active{
+	color: #EA5945;
+	background: white;
+}
+.zm_top span.zm_span-active{
+	display: block;
+}
+
+.zm_login-wrap .zm_pwd{
+	background: white;
+	padding-top: 30px;
+}
+.zm_text{
+	position: relative;
+	margin-bottom: 30px;
+	
+}
+.zm_login-wrap .zm_pwd .zm_user{
+	display: inline-block;
+	margin-left: 96px;
+	outline: none;
+	padding-left: 16px;
+	width: 334px;
+	height: 50px;
+	
+}
+.zm_login-wrap .zm_pwd p{
+	position: absolute;
+	left: 113px;
+	top: 20px;
+	color: #A2A3A2;
+}
+.zm_remeber span{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: url(http://img1.helper-sys.com/public/app/site/statics/images/xjExform/sprite_161129.png);
+	background-position: -78px -262px;
+	margin-right: 5px;
+	vertical-align: middle;
+	
+}
+.zm_remeber{
+	font-size: 12px;
+	margin-left: 94px;
+}
+.zm_remeber a{
+	color: #1B64C7;
+	margin-left: 74px;
+}
+.zm_remeber img{
+	vertical-align: middle;
+}
+.zm_login-bottom input{
+	display: inline-block;
+	outline: none;
+	width: 350px;
+	height: 50px;
+	margin-left: 96px;
+	font-size: 20px;
+	margin-bottom: 30px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.zm_login-bottom input:nth-child(1){
+	background: #EA5945;
+	color: white;
+	border: none;
+	letter-spacing: 20px;
+	margin-top: 30px;
+
+}
+.zm_login-bottom input:nth-child(1):hover{
+	background: #BF462F;
+}
+.zm_login-bottom input:nth-child(2){
+	background: white;
+	color: #EA5945;
+	border: 1px solid;
+}
+.zm_else-login{
+	margin-left: 96px;
+	font-size: 15px;
+	
+}
+.zm_else-login .zm_else-line{
+	display: inline-block;
+	width: 120px;
+	height: 1px;
+	background: #CCCDCC;
+}
+.zm_else-login span{
+	vertical-align: middle;
+}
+.zm_fast-login{
+	margin: 30px 96px 0;
+}
+.zm_fast-login a{
+	display: inline-block;
+	width: 50px;
+	text-align: center;
+	margin: 0 27px;
+}
+.zm{
+	width: 360px;
+	margin: 53px auto 0;
+	font-size: 10px;
+}
+
+.zm_phone{
+	display: none;
+}
+.zm_phone-wrap{
+	width: 390px;
+	margin: auto;
+}
+.zm_number1,.zm_number2{
+	position: relative;
+	margin-top: 30px;
+}
+.zm_number1 input{
+	display: inline-block;
+	width: 390px;
+	height: 50px;
+	outline: none;
+	padding-left: 30px;
+}
+.zm_number1 span{
+	position: absolute;
+	left: 0;
+	top: 20px;
+	font-size: 12px;
+}
+.zm_number1 p{
+	position: absolute;
+	top: 21px;
+	left: 32px;
+	color: #A2A3A2;
+}
+.zm_number2 input{
+	display: inline-block;
+	width: 170px;
+	height: 50px;
+	outline: none;
+	padding-left: 5px;
+}
+.zm_number2 input:nth-child(3){
+	border: 1px solid #E35939;
+	color: #E35939;
+	height: 55px;
+	border-radius: 3px;
+}
+.zm_number2 p{
+	position: absolute;
+	top: 21px;
+	left: 11px;
+	color: #A2A3A2;
+}
+.zm_remeber-r{
+	margin-left: 0;
+	margin-top: 32px;
+}
+.zm_login-bottom-r input{
+	margin-left: 0;
+	width: 352px;
+}
+.zm_phone-wrap>p{
+	font-size: 12.5px;
+	width: 352px;
+}
+.zm_phone-wrap>p>span{
+	color: #4D68C6;
+}
+.zm_sprit{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: url(http://img1.helper-sys.com/public/app/site/statics/images/xjExform/sprite_161129.png) -174px -262px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.zm_else-login-r{
+	margin-left: 0;
+	margin-top: 40px;
+}
+.zm_else-login-r .zm_else-line{
+	width: 124px;
+}
+.zm_ex-login{
+	margin-top: 30px;
+	font-size: 12px;
+}
+.zm_ex-login a{
+	margin-right: 15px;
+}
+.zm_ex-login a:nth-child(4){
+	margin-left: 42px;
+}
+.zm_ex-login img{
+	vertical-align: middle;
+}
+.zm_phone{
+	margin-bottom: 66px;
+}
+.passport-btn-close{
+	width: 25px;
+    height: 25px;
+    top: 15px;
+    right: 15px;
+    text-indent: -999999px;
+    background: url(../img/icon_04.png) 0 0 no-repeat;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
