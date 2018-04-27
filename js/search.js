@@ -116,6 +116,7 @@ $(function() {
 			type: "get",
 			url: "http://localhost:8080/goods/findGoodsByDim",
 			async: true,
+			dataType:"json",
 			data: {
 				dimName: scontent
 			},
@@ -123,7 +124,7 @@ $(function() {
 				console.log(data);
 				for(var i = 0; i < data.goodsList.length; i++) {
 					var index = data.goodsList[i].goodsId;
-					$("<li>").addClass("ljq_goods-item").append($("<div>").addClass("ljq_goods-item-outer").append($("<div>").addClass("ljq_goods-item-inner").append($("<div>").addClass("ljq_goods-pic").append($("<a>").attr("href", "shop.html?goodsId=" + index).attr("title", data.goodsList[i].goodsName).append($("<img>").prop("src", goodsList[i].goodsCoverSrc))).append($("<div>").addClass("ljq_sale-icon").append("<span>").text("热卖"))).append($("<div>").addClass("ljq_goods-info").append($("<div>").addClass("ljq_goods-price").append($("<div>").addClass("ljq_price1").append($("<div>").html("<span>￥</span>" + data.goodsList[i].goodsPrice))).append($("<del>").addClass("ljq_price2").append($("<span>").html("<span>￥</span>69.00")))).append($("<h3>").addClass("ljq_goods-name").append($("<a>").attr("href", "shop.html?goodsId=" + index).html(data.goodsList[i].goodsName))).append($("<div>").addClass("ljq_tag-box").append($("<span>").text("自营"))).append($("<div>").addClass("ljq_btm-box").append($("<a>").addClass("ljq_btm-box2").attr("href", "shop.html?goodsId=" + index).text("立即选购")))))).insertBefore(".ccc");
+					$("<li>").addClass("ljq_goods-item").append($("<div>").addClass("ljq_goods-item-outer").append($("<div>").addClass("ljq_goods-item-inner").append($("<div>").addClass("ljq_goods-pic").append($("<a>").attr("href", "shop.html?goodsId=" + index).attr("title", data.goodsList[i].goodsName).append($("<img>").prop("src", data.goodsList[i].goodsCoverSrc))).append($("<div>").addClass("ljq_sale-icon").append("<span>").text("热卖"))).append($("<div>").addClass("ljq_goods-info").append($("<div>").addClass("ljq_goods-price").append($("<div>").addClass("ljq_price1").append($("<div>").html("<span>￥</span>" + data.goodsList[i].goodsPrice))).append($("<del>").addClass("ljq_price2").append($("<span>").html("<span>￥</span>69.00")))).append($("<h3>").addClass("ljq_goods-name").append($("<a>").attr("href", "shop.html?goodsId=" + index).html(data.goodsList[i].goodsName))).append($("<div>").addClass("ljq_tag-box").append($("<span>").text("自营"))).append($("<div>").addClass("ljq_btm-box").append($("<a>").addClass("ljq_btm-box2").attr("href", "shop.html?goodsId=" + index).text("立即选购")))))).insertBefore(".ccc");
 				}
 				if($.cookie("user")=="null"){
 					$(".ljq_btm-box2").attr("href","javascript:;") 
@@ -330,7 +331,7 @@ $(function() {
 	} else if(test == "v2contt") {
 		$.ajax({
 			type: "get",
-			url: "http://localhost8080/goods/findGoodsByType02Id",
+			url: "http://localhost:8080/goods/findGoodsByType02Id",
 			async: true,
 			data: {
 				goodsType02Id: scontent
@@ -651,3 +652,399 @@ $(function() {
 });	
 
 
+
+
+
+
+//$(function() {
+//	var scindex = location.href.indexOf("=");
+//	console.log(scindex);
+//	var localurl = decodeURI(location.href);
+//	console.log(localurl);
+//	var scontent = localurl.substring(scindex + 1, localurl.length);
+//	$(".ljq_filter-entries:eq(1) span.ljq_filter-item").click(function(){
+//         var index=$(this).index();
+//         var minPrice;
+//         var maxPrice;
+//          console.log(index);
+//          switch (index){
+//          	case 0:
+//          	select();
+//          		break;
+//          	case 1:
+//          	minPrice=0;
+//          	maxPrice=99;
+//          	select();
+//          		break;
+//          	case 2:
+//          	minPrice=100;
+//          	maxPrice=199;
+//          	select();
+//          		break;
+//          	case 3:
+//          	minPrice=200;
+//          	maxPrice=299;
+//          	select();
+//          		break;
+//          	case 4:
+//          	minPrice=300;
+//          	maxPrice=399;
+//          	select();
+//          	    break;
+//          	case 5:
+//          	minPrice=500;
+//          	maxPrice=699;
+//          	select();
+//          	    break;
+//          	case 6:
+//          	minPrice=700;
+//          	maxPrice=999;
+//          	select();
+//          	    break;
+//          	case 7:
+//          	minPrice=1000;
+//          	maxPrice=10000;
+//          	select();
+//          	    break;
+//          	default:
+//          		break;
+//          }
+//			function select(){
+//				$.ajax({
+//				type: "post",
+//				url: "http://localhost:8080/goods/findGoodsByDimAndCondition",
+//				async: true,
+//				dataType: "JSON",
+//				data: {
+//					"dimName": scontent,
+//					"minPrice":minPrice,
+//					"maxPrice":maxPrice,
+//					"page":"1",
+//				},
+//				success: function(res) {
+//					console.log(res);
+//					var searchesShop = "";
+//					for(var i = 0; i < res.goodsList.length; i++) {
+//						console.log(res.goodsList.length);
+//						searchesShop += `<li class="ljq_goods-item"><div class="ljq_goods-item-outer" style="overflow: hidden; z-index: 1;"><div class="ljq_goods-item-inner" style="border: 1px solid rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 5px;"><div class="ljq_goods-pic"><a href="shop.html?goodsId=1" title="【简约流线美学】TUMI 塔米/途明 A"><img src="img/shop.jpg"></a><div class="ljq_sale-icon">热卖</div></div><div class="ljq_goods-info"><div class="ljq_goods-price"><div class="ljq_price1"><div><span>￥${res.goodsList[i].goodsPrice}</span></div></div><del class="ljq_price2"><span><span>￥</span>69.00</span></del></div><h3 class="ljq_goods-name"><a href="shop.html?goodsId=1">【简约流线美学】TUMI 塔米/途明 A</a></h3><div class="ljq_tag-box"><span>自营</span></div><div class="ljq_btm-box"><a href="shop.html?goodsId=1">立即选购</a></div></div></div></div></li>`
+//
+//					}
+//					$(".ljq_gallery-show .ljq_goods-item").remove();
+//					$(".ljq_clearfix").prepend(searchesShop);
+//					$(".ljq_goods-item-outer").mouseover(function() {
+//					$(this).css({
+//						"overflow": "inherit",
+//						"z-index": 999
+//					}).find($(".ljq_goods-item-inner")).css({
+//						"border": "1px #DDD solid",
+//						"box-shadow": "0 0 5px rgba(0, 0, 0, 0.3)"
+//					});
+//				});
+//				$(".ljq_goods-item-outer").mouseout(function() {
+//					$(this).css({
+//						"overflow": "hidden",
+//						"z-index": 1
+//					}).find($(".ljq_goods-item-inner")).css({
+//						"border": "1px #fff solid",
+//						"box-shadow": "0 0 5px rgba(0, 0, 0, 0.3)"
+//					});
+//				});
+//				}
+//			});
+//			}	
+//	})
+//	$(".ljq_filter-entries:eq(1) span.ljq_filter-item2 .ljq_filter-item-pop button:eq(1)").click(function(){
+//          	      var minPrice=$(".ljq_filter-entries:eq(1) input:eq(0)").val();
+//          	      var maxPrice=$(".ljq_filter-entries:eq(1) input:eq(1)").val();
+//          	      console.log(maxPrice);
+//          	        select();
+//          	    function select(){
+//				$.ajax({
+//				type: "post",
+//				url: "http://localhost:8080/goods/findGoodsByDimAndCondition",
+//				async: true,
+//				dataType: "JSON",
+//				data: {
+//					"dimName": scontent,
+//					"minPrice":minPrice,
+//					"maxPrice":maxPrice,
+//					"page":"1",
+//				},
+//				success: function(res) {
+//					console.log(res);
+//					var searchesShop = "";
+//					for(var i = 0; i < res.goodsList.length; i++) {
+//						console.log(res.goodsList.length);
+//						searchesShop += `<li class="ljq_goods-item"><div class="ljq_goods-item-outer" style="overflow: hidden; z-index: 1;"><div class="ljq_goods-item-inner" style="border: 1px solid rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 5px;"><div class="ljq_goods-pic"><a href="shop.html?goodsId=1" title="【简约流线美学】TUMI 塔米/途明 A"><img src="img/shop.jpg"></a><div class="ljq_sale-icon">热卖</div></div><div class="ljq_goods-info"><div class="ljq_goods-price"><div class="ljq_price1"><div><span>￥${res.goodsList[i].goodsPrice}</span></div></div><del class="ljq_price2"><span><span>￥</span>69.00</span></del></div><h3 class="ljq_goods-name"><a href="shop.html?goodsId=1">【简约流线美学】TUMI 塔米/途明 A</a></h3><div class="ljq_tag-box"><span>自营</span></div><div class="ljq_btm-box"><a href="shop.html?goodsId=1">立即选购</a></div></div></div></div></li>`
+//
+//					}
+//					$(".ljq_gallery-show .ljq_goods-item").remove();
+//					$(".ljq_clearfix").prepend(searchesShop);
+//					$(".ljq_goods-item-outer").mouseover(function() {
+//					$(this).css({
+//						"overflow": "inherit",
+//						"z-index": 999
+//					}).find($(".ljq_goods-item-inner")).css({
+//						"border": "1px #DDD solid",
+//						"box-shadow": "0 0 5px rgba(0, 0, 0, 0.3)"
+//					});
+//				});
+//				$(".ljq_goods-item-outer").mouseout(function() {
+//					$(this).css({
+//						"overflow": "hidden",
+//						"z-index": 1
+//					}).find($(".ljq_goods-item-inner")).css({
+//						"border": "1px #fff solid",
+//						"box-shadow": "0 0 5px rgba(0, 0, 0, 0.3)"
+//					});
+//				});
+//				}
+//			});
+//			}
+//          })
+//	
+//	$(".ljq_filter-entries:eq(2) span.ljq_filter-item").click(function(){
+//		 var index=$(this).index();
+//		 var minWeight;
+//		 var maxWeight;
+//		 switch (index){
+//		 	case 0:
+//		 	select1();
+//		 		break;
+//		 	case 1:
+//		 	minWeight=0;
+//		 	maxWeight=50;
+//		 	select1();
+//		 		break;
+//		 	case 2:
+//		 	minWeight=50;
+//		 	maxWeight=100;
+//		 	select1();
+//		 		break;
+//		 	case 3:
+//		 	minWeight=101;
+//		 	maxWeight=200;
+//		 	select1();
+//		 		break;
+//		 	case 4:
+//		 	minWeight=201;
+//		 	maxWeight=300;
+//		 	select1();
+//		 		break;
+//		 	case 5:
+//		 	minWeight=301;
+//		 	maxWeight=500;
+//		 	select1();
+//		 		break;
+//		 	case 6:
+//		 	minWeight=501;
+//		 	maxWeight=999;
+//		 	select1();
+//		 		break;
+//		 	case 7:
+//		 	minWeight=1000;
+//		 	maxWeight=2000;
+//		 	select1();
+//		 		break;
+//		 	case 8:
+//		 	minWeight=2001;
+//		 	maxWeight=200000;
+//		 	select1();
+//		 		break;
+//		 	default:
+//		 		break;
+//		 }
+//		
+//		 function select1(){
+//		 	$.ajax({
+//				type: "post",
+//				url: "http://localhost:8080/goods/findGoodsByDimAndCondition",
+//				async: true,
+//				dataType: "JSON",
+//				data: {
+//					"dimName": scontent,
+//					"minWeight":minWeight,
+//					"maxWeight":maxWeight,
+//					"page":"1",
+//				},
+//				success: function(res) {
+//					console.log(res);
+//					var searchesShop = "";
+//					for(var i = 0; i < res.goodsList.length; i++){
+//						console.log(res.goodsList.length);
+//						searchesShop += `<li class="ljq_goods-item"><div class="ljq_goods-item-outer" style="overflow: hidden; z-index: 1;"><div class="ljq_goods-item-inner" style="border: 1px solid rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 5px;"><div class="ljq_goods-pic"><a href="shop.html?goodsId=1" title="【简约流线美学】TUMI 塔米/途明 A"><img src="img/shop.jpg"></a><div class="ljq_sale-icon">热卖</div></div><div class="ljq_goods-info"><div class="ljq_goods-price"><div class="ljq_price1"><div><span>￥${res.goodsList[i].goodsPrice}</span></div></div><del class="ljq_price2"><span><span>￥</span>69.00</span></del></div><h3 class="ljq_goods-name"><a href="shop.html?goodsId=1">【简约流线美学】TUMI 塔米/途明 A</a></h3><div class="ljq_tag-box"><span>自营</span></div><div class="ljq_btm-box"><a href="shop.html?goodsId=1">立即选购</a></div></div></div></div></li>`
+//					}
+//					$(".ljq_gallery-show .ljq_goods-item").remove();
+//					$(".ljq_clearfix").prepend(searchesShop);
+//					$(".ljq_goods-item-outer").mouseover(function() {
+//					$(this).css({
+//						"overflow": "inherit",
+//						"z-index": 999
+//					}).find($(".ljq_goods-item-inner")).css({
+//						"border": "1px #DDD solid",
+//						"box-shadow": "0 0 5px rgba(0, 0, 0, 0.3)"
+//					});
+//				});
+//				$(".ljq_goods-item-outer").mouseout(function() {
+//					$(this).css({
+//						"overflow": "hidden",
+//						"z-index": 1
+//					}).find($(".ljq_goods-item-inner")).css({
+//						"border": "1px #fff solid",
+//						"box-shadow": "0 0 5px rgba(0, 0, 0, 0.3)"
+//					});
+//				});
+//				}
+//
+//			});
+//		 }
+//	})
+//	$(".ljq_filter-entries:eq(2) span.ljq_filter-item2 .ljq_filter-item-pop button:eq(1)").click(function(){
+//          	      var minWeight=$(".ljq_filter-entries:eq(2) input:eq(0)").val();
+//          	      var maxWeight=$(".ljq_filter-entries:eq(2) input:eq(1)").val();
+//          	      console.log(maxWeight);
+//          	    select();
+//          	    function select(){
+//				$.ajax({
+//				type: "post",
+//				url: "http://localhost:8080/goods/findGoodsByDimAndCondition",
+//				async: true,
+//				dataType: "JSON",
+//				data: {
+//					"dimName": scontent,
+//					"minWeight":minWeight,
+//					"maxWeight":maxWeight,
+//					"page":"1",
+//				},
+//				success: function(res) {
+//					console.log(res);
+//					var searchesShop = "";
+//					for(var i = 0; i < res.goodsList.length; i++) {
+//						console.log(res.goodsList.length);
+//						searchesShop += `<li class="ljq_goods-item"><div class="ljq_goods-item-outer" style="overflow: hidden; z-index: 1;"><div class="ljq_goods-item-inner" style="border: 1px solid rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 5px;"><div class="ljq_goods-pic"><a href="shop.html?goodsId=1" title="【简约流线美学】TUMI 塔米/途明 A"><img src="img/shop.jpg"></a><div class="ljq_sale-icon">热卖</div></div><div class="ljq_goods-info"><div class="ljq_goods-price"><div class="ljq_price1"><div><span>￥${res.goodsList[i].goodsPrice}</span></div></div><del class="ljq_price2"><span><span>￥</span>69.00</span></del></div><h3 class="ljq_goods-name"><a href="shop.html?goodsId=1">【简约流线美学】TUMI 塔米/途明 A</a></h3><div class="ljq_tag-box"><span>自营</span></div><div class="ljq_btm-box"><a href="shop.html?goodsId=1">立即选购</a></div></div></div></div></li>`
+//
+//					}
+//					$(".ljq_gallery-show .ljq_goods-item").remove();
+//					$(".ljq_clearfix").prepend(searchesShop);
+//					$(".ljq_goods-item-outer").mouseover(function() {
+//					$(this).css({
+//						"overflow": "inherit",
+//						"z-index": 999
+//					}).find($(".ljq_goods-item-inner")).css({
+//						"border": "1px #DDD solid",
+//						"box-shadow": "0 0 5px rgba(0, 0, 0, 0.3)"
+//					});
+//				});
+//				$(".ljq_goods-item-outer").mouseout(function() {
+//					$(this).css({
+//						"overflow": "hidden",
+//						"z-index": 1
+//					}).find($(".ljq_goods-item-inner")).css({
+//						"border": "1px #fff solid",
+//						"box-shadow": "0 0 5px rgba(0, 0, 0, 0.3)"
+//					});
+//				});
+//				}
+//			});
+//			}
+//          })
+//
+//	$(".ljq_filter-entries:eq(3) span").click(function(){
+//		   var goodsCountry;
+//		   var index=$(this).index();
+//		   switch (index){
+//		   	case 0:
+//		   	select1();
+//		   		break;
+//		   	case 1:
+//		   	goodsCountry="美国";
+//		   	select1();
+//		   		break;
+//		   	case 2:
+//		   	goodsCountry="日本";
+//		   	select1();
+//		   		break;
+//		   	case 3:
+//		   	goodsCountry="中国";
+//		   	select1();
+//		   		break;
+//		   	case 4:
+//		   	goodsCountry="香港";
+//		   	select1();
+//		   		break;
+//		   	case 5:
+//		   	goodsCountry="澳新";
+//		   	select1();
+//		   		break;
+//		   	case 6:
+//		   	goodsCountry="英国";
+//		   	select1();
+//		   		break;
+//		   	case 7:
+//		   	goodsCountry="德国";
+//		   	select1();
+//		   		break;
+//		   	case 8:
+//		   	goodsCountry="加拿大";
+//		   	select1();
+//		   		break;
+//		   	case 9:
+//		   	goodsCountry="瑞典";
+//		   	select1();
+//		   		break;
+//		   	case 10:
+//		   	goodsCountry="中国台湾";
+//		   	select1();
+//		   		break;
+//		   	case 9:
+//		   	goodsCountry="比利时";
+//		   	select1();
+//		   		break;
+//		   	default:
+//		   		break;
+//		   }
+//		   function select1(){
+//		 	$.ajax({
+//				type: "post",
+//				url: "http://localhost:8080/goods/findGoodsByDimAndCondition",
+//				async: true,
+//				dataType: "JSON",
+//				data: {
+//					"dimName": scontent,
+//					"goodsCountry":goodsCountry,
+//					"page":"1",
+//				},
+//				success: function(res) {
+//					console.log(res);
+//					var searchesShop = "";
+//					for(var i = 0; i < res.goodsList.length; i++){
+//						console.log(res.goodsList.length);
+//						searchesShop += `<li class="ljq_goods-item"><div class="ljq_goods-item-outer" style="overflow: hidden; z-index: 1;"><div class="ljq_goods-item-inner" style="border: 1px solid rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 5px;"><div class="ljq_goods-pic"><a href="shop.html?goodsId=1" title="【简约流线美学】TUMI 塔米/途明 A"><img src="img/shop.jpg"></a><div class="ljq_sale-icon">热卖</div></div><div class="ljq_goods-info"><div class="ljq_goods-price"><div class="ljq_price1"><div><span>￥${res.goodsList[i].goodsPrice}</span></div></div><del class="ljq_price2"><span><span>￥</span>69.00</span></del></div><h3 class="ljq_goods-name"><a href="shop.html?goodsId=1">【简约流线美学】TUMI 塔米/途明 A</a></h3><div class="ljq_tag-box"><span>自营</span></div><div class="ljq_btm-box"><a href="shop.html?goodsId=1">立即选购</a></div></div></div></div></li>`
+//					}
+//					$(".ljq_gallery-show .ljq_goods-item").remove();
+//					$(".ljq_clearfix").prepend(searchesShop);
+//					$(".ljq_goods-item-outer").mouseover(function() {
+//					$(this).css({
+//						"overflow": "inherit",
+//						"z-index": 999
+//					}).find($(".ljq_goods-item-inner")).css({
+//						"border": "1px #DDD solid",
+//						"box-shadow": "0 0 5px rgba(0, 0, 0, 0.3)"
+//					});
+//				});
+//				$(".ljq_goods-item-outer").mouseout(function() {
+//					$(this).css({
+//						"overflow": "hidden",
+//						"z-index": 1
+//					}).find($(".ljq_goods-item-inner")).css({
+//						"border": "1px #fff solid",
+//						"box-shadow": "0 0 5px rgba(0, 0, 0, 0.3)"
+//					});
+//				});
+//				}
+//
+//			});
+//		 }
+//		   
+//	})
+//	})

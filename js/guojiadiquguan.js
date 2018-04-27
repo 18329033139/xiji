@@ -110,9 +110,25 @@ $(function(){
            
           
         $("#header").load("header.html",function(){
-			$.getScript("js/header.js",function() {});
-			$.getScript("js/cookie.js",function() {});
-			$.getScript("js/jquery.cookie.js",function() {});
-		});
-		$("#footer").load("footer.html",function(){});      
+					$.getScript("js/header.js",function() {});
+					$.getScript("js/cookie.js",function() {});
+					$.getScript("js/jquery.cookie.js",function() {});
+					$(function() {
+						$(".ljq_index_nav_classification_lv1").hide();
+						$(".ljq_index_nav_classification p").mouseover(function() {
+							$(".ljq_index_nav_classification_lv1").slideDown();
+							$(".ljq_index_nav_classification_lv3").hide();
+						});
+						$(".ljq_index_nav_classification_lv1").mouseover(function(){
+								$(".ljq_index_nav_classification_lv1").slideDown();
+								console.log(1);
+								
+						});
+						$(".ljq_index_nav_classification_lv1").mouseout(function(){
+							console.log(2);
+							$(".ljq_index_nav_classification_lv1").hide();
+						});
+					})
+				});
+				$("#footer").load("footer.html",function(){});      
 })

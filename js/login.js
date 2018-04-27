@@ -164,12 +164,14 @@ $(function(){
 				}else{
 					$.cookie("autologin",null);
 				}
+
 				$.ajax({
 					type:"get",
 					dataType:"json",
 					url:"http://localhost:8080/user/login",
+
 					data:{
-						user: $(".zm_pwd-user input").val(),
+						"user": $(".zm_pwd-user input").val(),
 						"password":$(".zm_pwd-in input").val(),
 					},
 					 success:function(res){
@@ -222,7 +224,7 @@ $(function(){
 					var check;
 					$.ajax({
 						type:"get",
-						url:"http://10.80.13.90:8080/user/sendCodeForPhoneLogin",
+						url:"http://localhost:8080/user/sendCodeForPhoneLogin",
 						data:{
 							phone:$(".zm_number1 input").val(),
 						},
@@ -234,7 +236,7 @@ $(function(){
 								if (result5.data == $(".zm_number2 input").val()) {
 									$.ajax({
 										type:"get",
-										async:false,
+
 										url:"http://10.80.13.90:8080/user/loginByPhone",
 										data:{
 											userPhone:$(".zm_number1 input").val(),
